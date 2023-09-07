@@ -10,5 +10,4 @@ va applicato uno sconto del 40% per gli over 65
 
 1. salvare chilometri da percorrere ed età del passeggero in prompt
 2. applicare sconto per le varie età
-3. calcolare prezzo biglietto
-4. mandare in stampa resoconto
+3. mandare in stampa resoconto

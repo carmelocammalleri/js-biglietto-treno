@@ -1,7 +1,6 @@
 // 1. salvare chilometri da percorrere ed età del passeggero in prompt. Verificare e creare costanti messaggi
 // 2. applicare sconto per le varie età
-// 3. calcolare prezzo biglietto
-// 4. mandare in stampa resoconto
+// 3. mandare in stampa resoconto
 
 // 1.
 const travelKm = prompt ('Quanti chilometri devi percorrere?');
@@ -9,7 +8,7 @@ const age = prompt ('Quanti anni hai?');
 const priceKm = 0.21;
 const priceTicket = (travelKm * priceKm);
 
-// let
+// messages
 let message = `Il prezzo del biglietto è di ${priceTicket}`
 let error;
 
@@ -27,6 +26,9 @@ if(age < 18){
 } else if(age > 64){
   console.log (`Il prezzo del biglietto per l'utente uover-65 è di ${saleOver}`);
 }
+
+//3.
+
 
 
 
