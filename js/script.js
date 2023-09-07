@@ -21,13 +21,11 @@ if(isNaN(age && travelKm)){
 
 
 // 2.
-let saleUnder = (priceTicket - priceTicket *20 / 100)
-let saleOver = (priceTicket - priceTicket *40 /100)
-
-
 if(age < 18){
+  saleUnder = (priceTicket - priceTicket *20 / 100);
   messageUnder = (`Il prezzo del biglietto per l'utente under-18 è di ${saleUnder}€`);
 } else if(age > 64){
+  saleOver = (priceTicket - priceTicket *40 /100)
   messageOver = (`Il prezzo del biglietto per l'utente over-64 è di ${saleUnder}€`);
 }
 
