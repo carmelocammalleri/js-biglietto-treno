@@ -12,8 +12,6 @@ const priceTicket = (travelKm * priceKm);
 // let
 let message = `Il prezzo del biglietto è di ${priceTicket}`
 let error;
-let saleUnder = (priceTicket - priceTicket *20 / 100)
-let saleOver = (priceTicket - priceTicket *40 /100)
 
 // verify
 if(isNaN(age && travelKm)){
@@ -21,10 +19,13 @@ if(isNaN(age && travelKm)){
 }
 
 // 2.
+let saleUnder = (priceTicket - priceTicket *20 / 100)
+let saleOver = (priceTicket - priceTicket *40 /100)
+
 if(age < 18){
-  console.log ('Utente ha 20% di sconto')
+  console.log (`Il prezzo del biglietto per l'utente under-18 è di ${saleUnder}`);
 } else if(age > 64){
-  console.log ('Utente ha 40% di sconto')
+  console.log (`Il prezzo del biglietto per l'utente uover-65 è di ${saleOver}`);
 }
 
 
