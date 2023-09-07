@@ -25,19 +25,16 @@ let saleUnder = (priceTicket - priceTicket *20 / 100)
 let saleOver = (priceTicket - priceTicket *40 /100)
 
 
-let messageUnder = (`Il prezzo del biglietto per l'utente under-18 è di ${saleUnder}€`);
-let messageOver = (`Il prezzo del biglietto per l'utente over-64 è di ${saleUnder}€`);
-
-
 if(age < 18){
-  console.log (`Il prezzo del biglietto per l'utente under-18 è di ${saleUnder}`);
+  messageUnder = (`Il prezzo del biglietto per l'utente under-18 è di ${saleUnder}€`);
 } else if(age > 64){
-  console.log (`Il prezzo del biglietto per l'utente uover-65 è di ${saleOver}`);
+  messageOver = (`Il prezzo del biglietto per l'utente over-64 è di ${saleUnder}€`);
 }
 
 
 //3.
 const elementOutput = document.getElementById('output');
+
 if(age < 18){
   elementOutput.innerHTML = messageUnder;
 } else if (age > 64){
