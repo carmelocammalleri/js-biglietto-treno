@@ -3,3 +3,6 @@
 // 3. calcolare prezzo biglietto
 // 4. mandare in stampa resoconto
 
+const travelKm = prompt ('Quanti chilometri devi percorrere?');
+const age = prompt ('Quanti anni hai?');
+const priceKm = 0.21;
